@@ -305,9 +305,7 @@ a {
         border-radius: 10px;
     }
 
-    .footer-icons a img{
-        height: 15px;
-        width: 15px;
-        padding: 0.1rem 0;
+    .footer-icons img{
+        padding-right: 10px;
     }
 }
