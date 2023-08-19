@@ -49,8 +49,8 @@ section {
 
 .dashboard-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .dashboard-cell {
@@ -59,14 +59,14 @@ section {
     text-align: center;
     border-radius: 15px; /* Adiciona bordas circulares */
     background-color: rgba(0, 0, 0, 0.5);; /* Cor de fundo */
-    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+    overflow: auto; /* Garante que o conteúdo não ultrapasse as bordas */
 }
 
 .dashboard-cell img {
-    width: 100%; /* A imagem ocupa todo o espaço disponível da célula */
-    height: 70%; /* Mantém a proporção da imagem */
-    max-height: 267px;
-    max-width: 400px; /* Define a largura máxima das células */
+    width: 80%; /* A imagem ocupa 80% da largura disponível da célula */
+    height: auto; /* A altura se ajusta automaticamente para manter a proporção */
+    max-height: 70%; /* Define a altura máxima da célula em relação à altura da tela */
+    max-width: 80%; /* Define a largura máxima da célula em relação à largura da tela */
     margin: 0 auto; /* Centraliza as células horizontalmente */
     box-sizing: border-box;
     border-radius: 10px; /* Adiciona bordas circulares */
@@ -295,13 +295,13 @@ a {
         width: 20px;
     }
 
-    .dashboard-cell img {
-        width: 100%; /* A imagem ocupa todo o espaço disponível da célula */
-        height: 70%; /* Mantém a proporção da imagem */
-        max-height: 100px;
-        max-width: 400px; /* Define a largura máxima das células */
-        margin: 0 auto; /* Centraliza as células horizontalmente */
-        box-sizing: border-box;
-        border-radius: 10px; /* Adiciona bordas circulares */
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr),; /* Uma coluna em telas menores */
+        gap: 10px;
+    }
+
+    .dashboard-cell {
+        padding: 10px;
+        border-radius: 10px;
     }
 }
