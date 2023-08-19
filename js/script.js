@@ -70,3 +70,38 @@ $(document).ready(function() {
         }        
     });
 });
+
+$(document).ready(function() {
+    document.getElementById("form-fale-conosco").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+        
+        // Pega os dados do formulário
+        var formData = $(this).serialize();
+
+        // Cria um objeto Date representando a data e hora atuais
+        var dataHoraAtual = new Date();
+
+        // Obtém os componentes individuais da data e hora
+        var ano = dataHoraAtual.getFullYear();
+        var mes = dataHoraAtual.getMonth() + 1; // Os meses são indexados a partir de 0
+        var dia = dataHoraAtual.getDate();
+        var hora = dataHoraAtual.getHours();
+        var minutos = dataHoraAtual.getMinutes();
+        var segundos = dataHoraAtual.getSeconds();
+
+
+        // Formata a data e hora como uma string
+        var dataFormatada = dia + "/" + mes + "/" + ano;
+        var horaFormatada = hora + ":" + minutos + ":" + segundos;
+
+        // Definindo dados para envio via AJAX
+        var dataEnvio = formData + "&data%5Bdata%5D=" + dataFormatada + "&data%5Bhora%5D=" + horaFormatada
+        
+        // Envia os dados via AJAX
+        $.ajax({
+            type: "POST",
+            url: "https://sheetdb.io/api/v1/ieu4zrq60emxq", // Substitua pela URL do seu script de processamento
+            data: dataEnvio,
+        });
+    });
+});
