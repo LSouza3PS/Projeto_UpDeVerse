@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpDeVerse Soluções</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="icon" href="img/logoUpdeverse.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>UpDeVerse Soluções</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li class="dropdown" id="servicesDropdown">
+                    <a href="javascript:void(0);" onclick="toggleDropdown();">Serviços</a>
+                    <div class="dropdown-arrow" onclick="toggleDropdown();"></div>
+                    <div class="dropdown-content">
+                        <a href="#dashboards" onclick="closeDropdown();">Dashboards</a>
+                        <a href="#machine-learning" onclick="closeDropdown();">Machine Learning</a>
+                        <a href="#outsourcing" onclick="closeDropdown();">Outsourcing</a>
+                        <a href="#automacao" onclick="closeDropdown();">Automação de Processos</a>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0);" onclick="openFaleConosco();">Fale Conosco</a></li>
+            </ul>
+        </nav>
+        <!-- Tela de Fale Conosco -->
+        <div class="fale-conosco" id="faleConosco">
+            <div class="fale-conosco-form">
+                <span class="close-button close-button-fale-conosco" onclick="closeFaleConosco();">&times;</span>
+                <h2>Fale Conosco</h2>
+                <form action="https://sheetdb.io/api/v1/ieu4zrq60emxq" method="post" name="ResponseUpDeVerse" target="_none">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="data[nome]" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="data[email]" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="data[telefone]">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="data[mensagem]" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="submit" value="Enviar" id="enviar">
+                    </div>
+                    
+                    <div class="mensagem mensagem-sucesso" id="mensagemSucesso">
+                        Dados enviados com sucesso!
+                    </div>
+                    
+                    <div class="mensagem mensagem-erro" id="mensagemErro">
+                        Erro ao enviar informações, por favor, verifique se todos os dados estão preenchidos corretamente e tente novamente. Caso o erro persista, entre em contato através do e-mail <i>updeverse@gmail.com</i>.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre-nos">
+            <h2>Sobre Nossa Empresa</h2>
+            <p>A UpDeVerse é uma empresa visionária e inovadora que atua no setor de análise de dados, automação de processos e desenvolvimento, com a missão de capacitar parceiros a tomar decisões mais eficientes e estratégicas. Fundada com base em valores sólidos e um compromisso com a excelência, a UpDeVerse é um parceiro confiável e valioso na jornada de transformação digital. Estamos empenhados no crescimento e sucesso de nossos clientes. Com uma visão audaciosa, uma cultura fundamentada em valores sólidos e uma missão transformadora, a UpDeVerse está pavimentando o caminho para um futuro em que os dados se tornam a chave para insights poderosos e decisões eficazes.</p>
+        </section>
+
+        <section id="dashboards">
+            <h2>Dashboards</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-cell">
+                    <p>Departamento Pessoal</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiZjBjYWQwMTEtNThhMi00YTVkLTg1NDQtNmM5NDdhNGVlOGZhIiwidCI6ImM2YzEwYWI3LWYxNDItNGJjYy05YmUxLTk0ZjliNWFlYmY2YSJ9&pageName=ReportSection" target="_blank"><img src="img/dashRH.png" alt="Dashboard 1" loading="lazy"></a>
+                    <br>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiZjBjYWQwMTEtNThhMi00YTVkLTg1NDQtNmM5NDdhNGVlOGZhIiwidCI6ImM2YzEwYWI3LWYxNDItNGJjYy05YmUxLTk0ZjliNWFlYmY2YSJ9&pageName=ReportSection" target="_blank">Ver Dashboard</a>
+                </div>
+                <div class="dashboard-cell">
+                    <p>Marketing</p>
+                    <a href="link_dashboard_2" target="_blank"><img src="img/dashRH.png" alt="Dashboard 2" loading="lazy"></a>
+                    <br>
+                    <a href="link_dashboard_2" target="_blank">Ver Dashboard</a>
+                </div>
+                <div class="dashboard-cell">
+                    <p>Comercial</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNGI0ZWJhMGYtYjUxOC00OWQ2LWI3MzAtODQxZDEyOTU3YzUyIiwidCI6ImM2YzEwYWI3LWYxNDItNGJjYy05YmUxLTk0ZjliNWFlYmY2YSJ9&pageName=ReportSectione39793b047dc3aea7a8b" target="_blank"><img src="img/dashCrossSelling.png" alt="Dashboard 3" loading="lazy"></a>
+                    <br>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNGI0ZWJhMGYtYjUxOC00OWQ2LWI3MzAtODQxZDEyOTU3YzUyIiwidCI6ImM2YzEwYWI3LWYxNDItNGJjYy05YmUxLTk0ZjliNWFlYmY2YSJ9&pageName=ReportSectione39793b047dc3aea7a8b" target="_blank">Ver Dashboard</a>
+                </div>
+                <div class="dashboard-cell">
+                    <p>Financeiro</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiYjdjMTM1OWUtZjg4Ni00MTBlLWE3ODUtNTFhZGNkMjdlYjBiIiwidCI6ImM2YzEwYWI3LWYxNDItNGJjYy05YmUxLTk0ZjliNWFlYmY2YSJ9&pageName=ReportSection" target="_blank"><img src="img/dashDollar.png" alt="Dashboard 4" loading="lazy"></a>
+                    <br>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiYjdjMTM1OWUtZjg4Ni00MTBlLWE3ODUtNTFhZGNkMjdlYjBiIiwidCI6ImM2YzEwYWI3LWYxNDItNGJjYy05YmUxLTk0ZjliNWFlYmY2YSJ9&pageName=ReportSection" target="_blank">Ver Dashboard</a>
+                </div>
+                <div class="dashboard-cell">
+                    <p>Logística</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNDMzYTllMTAtMGI3Ni00NjE5LTg2NzctZTAyMzdjMzJiMGRiIiwidCI6ImM2YzEwYWI3LWYxNDItNGJjYy05YmUxLTk0ZjliNWFlYmY2YSJ9" target="_blank"><img src="img/dashLogistica.png" alt="Dashboard 5" loading="lazy"></a>
+                    <br>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNDMzYTllMTAtMGI3Ni00NjE5LTg2NzctZTAyMzdjMzJiMGRiIiwidCI6ImM2YzEwYWI3LWYxNDItNGJjYy05YmUxLTk0ZjliNWFlYmY2YSJ9" target="_blank">Ver Dashboard</a>
+                </div>
+                <div class="dashboard-cell">
+                    <p>Planejamento</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNTc1ZWI1MWYtZWRlZC00YzFiLThkN2EtNGZjMzc1Y2ViOTAzIiwidCI6ImM2YzEwYWI3LWYxNDItNGJjYy05YmUxLTk0ZjliNWFlYmY2YSJ9&pageName=ReportSection" target="_blank"><img src="img/dashPet.png" alt="Dashboard 6" loading="lazy"></a>
+                    <br>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNTc1ZWI1MWYtZWRlZC00YzFiLThkN2EtNGZjMzc1Y2ViOTAzIiwidCI6ImM2YzEwYWI3LWYxNDItNGJjYy05YmUxLTk0ZjliNWFlYmY2YSJ9&pageName=ReportSection" target="_blank">Ver Dashboard</a>
+                </div>                                
+            </div>
+            <div id="msg">
+                Informamos que todos os conteúdos apresentado são desenvolvidos pela UpDeVerse e, visando garantir a segurança e privacidade de nossos clientes, utilizamos dados fictícios para sua elaboração.
+            </div>
+        </section>
+
+        <section id="machine-learning">
+            <h2>Machine Learning</h2>
+            <p>Oferecemos soluções de <strong>Machine Learning</strong> personalizadas para otimizar processos e tomar decisões mais informadas. Nossa equipe experiente de cientistas de dados trabalha para entender suas necessidades e desenvolver modelos que atendam às suas metas.</p>
+        </section>
+
+        <section id="outsourcing">
+            <h2>Outsourcing - Alocação de Profissionais de TI</h2>
+            <p>Nossa equipe de profissionais altamente qualificados em tecnologia da informação está pronta para ser a extensão da sua equipe. Oferecemos serviços de alocação de profissionais de TI para apoiar seus projetos e garantir o sucesso contínuo do seu negócio.</p>
+        </section>
+
+        <section id="automacao">
+            <h2>Automação de Processos</h2>
+            <p>Aproveite a <strong>automação de processos</strong> para aumentar a eficiência e reduzir erros. Combinamos a tecnologia com a expertise em <strong>Machine Learning</strong> para criar soluções de automação que otimizam suas operações e liberam sua equipe para se concentrar em tarefas estratégicas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2023 UpDeVerse Soluções. Todos os direitos reservados.</p>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/company/98532260/admin/feed/posts/?feedType=following"><img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" title="LinkedIn" alt="Link do LinkedIn" style="height: 30px; width: 30px; border-radius: 50%;" loading="lazy"></a>
+            <a href="https://wa.me/5511952035347"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" title="WhatsApp" alt="Link do WhatsApp" style="height: 30px; width: 30px; border-radius: 50%;" loading="lazy"></a>
+            <a href="https://www.canva.com/design/DAFqmh5pSiw/7e8Dy7OqRucfMI-zxcZM3Q/view" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlcvCu71fa1DtkOXUZ865liHnMT7NaVlEXMA&usqp=CAU" title="Power BI" alt="Link do Power BI" style="height: 30px; width: 30px; border-radius: 50%;" loading="lazy"></a>
+            <a href="https://www.canva.com/design/DAFrC-8F8C8/iEfayy5ghuUR7jRTsmViEw/view" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/8329/8329487.png" title="Machine Learning" alt="Link do Machine Learning" style="height: 30px; width: 30px; border-radius: 50%;" loading="lazy"></a>
+        </div>
+    </footer>
+</body>
+</html>
