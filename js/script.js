@@ -44,6 +44,7 @@ function closeFaleConosco() {
     $("#mensagemSucesso").hide();
 }
 
+
 $(document).ready(function() {
     $("#enviar").click(function() {
         var nome = document.getElementById("nome").value;
@@ -51,22 +52,21 @@ $(document).ready(function() {
         var telefone = document.getElementById("telefone").value;
         var mensagem = document.getElementById("mensagem").value;
 
-        if(nome === null || email === null || telefone === null || mensagem === null){
+        if(!nome || !email || !telefone || !mensagem){
+            $("#mensagemSucesso").hide();
+            $("#mensagemErro").show();
+        }
+        else{
             $("#mensagemErro").hide();
             $("#mensagemSucesso").show();
             setTimeout(function() {
                 $("#faleConosco").hide();
-                ("#mensagemSucesso").hide();
+                $("#mensagemSucesso").hide();
                 $("#nome").val("");
                 $("#email").val("");
                 $("#telefone").val("");
                 $("#mensagem").val("");
         }, 3000); // Ocultar após 2 segundos (pode ajustar o tempo conforme necessário)
-        }
-        else{
-            $("#mensagemSucesso").hide();
-            $("#mensagemErro").show();
-        }
-        
+        }        
     });
 });

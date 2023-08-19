@@ -95,10 +95,13 @@ footer {
     align-items: center;
 }
 
-.footer-icons a {
+.footer-icons a img{
     padding: 5px;
     text-decoration: none;
     color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
 
 /* Estilos para a tag de direitos autorais */
