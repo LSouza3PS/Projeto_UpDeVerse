@@ -304,4 +304,8 @@ a {
         padding: 10px;
         border-radius: 10px;
     }
+
+    .footer-icons a img{
+        padding: 2px;
+    }
 }
