@@ -2,9 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("img_css/background_body.jpg"); /* Substitua pelo caminho da sua imagem */
+    background-color: rgba(0, 0, 0);
+    background-image: url("background_body/background_body.gif"); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
     color: #fff;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 header {
