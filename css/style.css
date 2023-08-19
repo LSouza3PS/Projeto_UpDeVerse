@@ -262,6 +262,7 @@ a {
 @media screen and (max-width: 768px) {
     body {
         font-size: 12px; /* Tamanho de fonte menor para telas menores */
+        background-image: url("background_body/background_body_vertical.gif"); /* Substitua pelo caminho da sua imagem */
     }
 
     header {
