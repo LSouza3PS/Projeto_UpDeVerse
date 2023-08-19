@@ -308,6 +308,6 @@ a {
     .footer-icons a img{
         height: 15px;
         width: 15px;
-        padding: 2px;
+        padding: 0.1rem 0;
     }
 }
