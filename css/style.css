@@ -254,3 +254,54 @@ a {
 #sobre-nos, #machine-learning, #outsourcing, #automacao {
     text-align: justify;
 }
+
+/* Estilos para telas de até 768px (tablets e celulares) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px; /* Tamanho de fonte menor para telas menores */
+    }
+
+    header {
+        padding: 0.5rem 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        margin-bottom: 1rem;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .dashboard-cell img {
+        height: auto;
+        max-height: none;
+        max-width: 100%;
+    }
+
+    .footer-icons a img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .dashboard-cell img {
+        width: 100%; /* A imagem ocupa todo o espaço disponível da célula */
+        height: 70%; /* Mantém a proporção da imagem */
+        max-height: 100px;
+        max-width: 400px; /* Define a largura máxima das células */
+        margin: 0 auto; /* Centraliza as células horizontalmente */
+        box-sizing: border-box;
+        border-radius: 10px; /* Adiciona bordas circulares */
+    }
+}
