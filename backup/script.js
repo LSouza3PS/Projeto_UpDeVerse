@@ -1,4 +1,3 @@
-// Função que é executada quando o DOM é carregado
 document.addEventListener('DOMContentLoaded', function() {
     let sections = document.querySelectorAll('section');
     sections.forEach(function(section) {
@@ -45,7 +44,7 @@ function closeFaleConosco() {
     $("#mensagemSucesso").hide();
 }
 
-// Função executada quando o documento está pronto
+
 $(document).ready(function() {
     $("#enviar").click(function() {
         var nome = document.getElementById("nome").value;
@@ -53,10 +52,11 @@ $(document).ready(function() {
         var telefone = document.getElementById("telefone").value;
         var mensagem = document.getElementById("mensagem").value;
 
-        if (!nome || !email || !telefone || !mensagem) {
+        if(!nome || !email || !telefone || !mensagem){
             $("#mensagemSucesso").hide();
             $("#mensagemErro").show();
-        } else {
+        }
+        else{
             $("#mensagemErro").hide();
             $("#mensagemSucesso").show();
             setTimeout(function() {
@@ -66,12 +66,11 @@ $(document).ready(function() {
                 $("#email").val("");
                 $("#telefone").val("");
                 $("#mensagem").val("");
-            }, 3000); // Ocultar após 3 segundos
-        }
+        }, 3000); // Ocultar após 2 segundos (pode ajustar o tempo conforme necessário)
+        }        
     });
 });
 
-// Função executada quando o documento está pronto
 $(document).ready(function() {
     document.getElementById("form-fale-conosco").addEventListener("submit", function(event) {
         event.preventDefault(); // Evita o comportamento padrão de envio do formulário
@@ -90,6 +89,7 @@ $(document).ready(function() {
         var minutos = dataHoraAtual.getMinutes();
         var segundos = dataHoraAtual.getSeconds();
 
+
         // Formata a data e hora como uma string
         var dataFormatada = dia + "/" + mes + "/" + ano;
         var horaFormatada = hora + ":" + minutos + ":" + segundos;
@@ -100,7 +100,7 @@ $(document).ready(function() {
         // Envia os dados via AJAX
         $.ajax({
             type: "POST",
-            url: "https://sheetdb.io/api/v1/ieu4zrq60emxq",
+            url: "https://sheetdb.io/api/v1/ieu4zrq60emxq", // Substitua pela URL do seu script de processamento
             data: dataEnvio,
         });
     });

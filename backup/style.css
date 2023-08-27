@@ -1,26 +1,22 @@
-/* Estilos para o corpo da página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(0, 0, 0); /* Cor de fundo */
-    background-image: url("background_body/background_body.gif"); /* Imagem de fundo */
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o fundo */
-    color: #fff; /* Cor do texto */
-    background-repeat: repeat; /* Repete a imagem de fundo */
-    background-attachment: fixed; /* Fixa a imagem de fundo */
+    background-color: rgba(0, 0, 0);
+    background-image: url("background_body/background_body.gif"); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
+    color: #fff;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
-/* Estilos para o cabeçalho */
 header {
-    background-color: rgba(0, 0, 0); /* Cor de fundo do cabeçalho */
-    color: #5dcca1; /* Cor do texto do cabeçalho */
+    background-color: rgba(0, 0, 0);
+    color: #5dcca1;
     text-align: center;
     padding: 1rem 0;
-    border-bottom: 1px solid #444; /* Borda inferior */
 }
 
-/* Estilos para a lista de navegação */
 nav ul {
     list-style: none;
     margin: 0;
@@ -37,12 +33,10 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Estilos para o conteúdo principal */
 main {
     padding: 2rem;
 }
 
-/* Estilos para as seções */
 section {
     margin-bottom: 2rem;
     opacity: 0;
@@ -50,27 +44,24 @@ section {
     transition: opacity 0.8s, transform 0.8s;
 }
 
-/* Estilos para o painel de controle */
 #dashboards {
     opacity: 0.5;
     transform: translateY(20px);
     transition: opacity 0.3s, transform 0.8s;
 }
 
-/* Estilos para a grade do painel de controle */
 .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-/* Estilos para as células do painel de controle */
 .dashboard-cell {
     border: 1px solid #444;
     padding: 15px;
     text-align: center;
-    border-radius: 15px; /* Bordas circulares */
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo */
+    border-radius: 15px; /* Adiciona bordas circulares */
+    background-color: rgba(0, 0, 0, 0.5);; /* Cor de fundo */
     overflow: auto; /* Garante que o conteúdo não ultrapasse as bordas */
 }
 
@@ -81,10 +72,9 @@ section {
     max-width: 80%; /* Define a largura máxima da célula em relação à largura da tela */
     margin: 0 auto; /* Centraliza as células horizontalmente */
     box-sizing: border-box;
-    border-radius: 10px; /* Bordas circulares */
+    border-radius: 10px; /* Adiciona bordas circulares */
 }
 
-/* Estilos para os títulos h2 */
 h2 {
     font-size: 1.5em;
     font-weight: bold;
@@ -92,27 +82,23 @@ h2 {
     color: #5dcca1; /* Cor destacada para títulos */
 }
 
-/* Estilos para os parágrafos */
 p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 1.5em;
 }
 
-/* Estilos para o rodapé */
 footer {
-    background-color: rgba(0, 0, 0); /* Cor de fundo do rodapé */
-    color: #fff; /* Cor do texto do rodapé */
+    background-color: rgba(0, 0, 0);
+    color: #fff;
     text-align: left;
     padding: 0.1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #444; /* Borda superior */
 }
 
-/* Estilos para os ícones do rodapé */
-.footer-icons a img {
+.footer-icons a img{
     padding: 5px;
     width: 30px;
     height: 30px;
@@ -129,7 +115,7 @@ footer {
 
 /* Estilos para links */
 a {
-    color: #ffffff; /* Cor dos links */
+    color: #ffffff; /* Altere para a cor desejada */
     text-decoration: none; /* Remove o sublinhado */
 }
 
@@ -138,37 +124,34 @@ a {
     position: relative;
     display: inline-block;
 }
-
-/* Estilo para o conteúdo da lista suspensa */
+    
 .dropdown-content {
     display: none;
     position: absolute;
-    color: #ffffff; /* Cor do texto */
-    background-color: #000000; /* Cor de fundo da lista */
+    color: #ffffff;
+    background-color: #000000;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-/* Estilo para a lista suspensa ativa */
 .dropdown.active .dropdown-content {
     display: block;
 }
 
-/* Estilos para os itens da lista suspensa */
+/* Estilo para os itens da lista */
 .dropdown-content a {
-    color: rgb(255, 255, 255); /* Cor do texto dos itens */
+    color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-/* Estilos para itens da lista suspensa ao passar o mouse */
 .dropdown-content a:hover {
     background-color: #111111;
 }
 
-/* Estilo para o triângulo invertido da lista suspensa */
+/* Estilo para o triângulo invertido */
 .dropdown-arrow {
     position: relative;
     display: inline-block;
@@ -177,7 +160,7 @@ a {
     transform: translateY(-50%);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid rgb(255, 255, 255); /* Cor do triângulo */
+    border-top: 5px solid rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -189,27 +172,26 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
     justify-content: center;
     align-items: center;
 }
 
-/* Estilo para o formulário de Fale Conosco */
 .fale-conosco-form {
-    background-color: rgba(0, 0, 0); /* Cor de fundo do formulário */
+    background-color: rgba(0, 0, 0);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 8px rgba(255, 255, 255); /* Sombra */
+    box-shadow: 0 0 8px rgba(255, 255, 255);
     max-width: 300px;
+    height: auto;
     width: 80%;
     height: auto;
     text-align: center;
     position: relative;
-    margin: 0 auto; /* Centraliza a caixa */
+    margin: 0 auto; /* Adicionado para centralizar a caixa */
 }
 
-/* Estilo para o botão de fechar do formulário */
 .close-button {
     position: absolute;
     top: 10px;
@@ -217,7 +199,7 @@ a {
     cursor: pointer;
 }
 
-/* Estilo para o botão de fechar do Fale Conosco */
+/* Estilo para o botão de fechar */
 .close-button-fale-conosco {
     position: absolute;
     top: 5px;
@@ -226,7 +208,7 @@ a {
     cursor: pointer;
 }
 
-/* Estilos para os grupos de campos do formulário */
+/* Estilo para os grupos de campos do formulário */
 .form-group {
     margin-bottom: 15px;
     text-align: left;
@@ -240,37 +222,33 @@ a {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    max-width: 100%; /* Largura máxima para não ultrapassar */
+    max-width: 100%; /* Adicionado para garantir que a largura não ultrapasse */
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    box-sizing: border-box; /* Adicionado para incluir o padding e a borda na largura total */
 }
 
 .form-group input[type="submit"] {
     width: auto;
 }
 
-/* Estilo para a mensagem de feedback */
 .mensagem {
     padding: 10px;
     text-align: center;
     display: none;
 }
 
-/* Estilo para mensagem de sucesso */
 .mensagem-sucesso {
-    background-color: #4CAF50; /* Cor de fundo para sucesso */
+    background-color: #4CAF50;
     color: white;
 }
 
-/* Estilo para mensagem de erro */
 .mensagem-erro {
-    background-color: #f44336; /* Cor de fundo para erro */
+    background-color: #f44336;
     color: white;
 }
 
-/* Estilos para seções específicas */
 #msg {
     text-align: center;
     padding: 10px;
@@ -284,7 +262,7 @@ a {
 @media screen and (max-width: 768px) {
     body {
         font-size: 12px; /* Tamanho de fonte menor para telas menores */
-        background-image: url("background_body/background_body_vertical.gif"); /* Imagem de fundo vertical */
+        background-image: url("background_body/background_body_vertical.gif"); /* Substitua pelo caminho da sua imagem */
     }
 
     header {
@@ -317,7 +295,7 @@ a {
     }
 
     .dashboard-grid {
-        grid-template-columns: repeat(2, 1fr); /* Uma coluna em telas menores */
+        grid-template-columns: repeat(2, 1fr),; /* Uma coluna em telas menores */
         gap: 10px;
     }
 
@@ -338,7 +316,7 @@ a {
         justify-content: center; /* Centralizar horizontalmente */
         align-items: center; /* Centralizar verticalmente */
     }
-
+    
     .footer-icons a img {
         padding: 5px;
         width: 20px;
