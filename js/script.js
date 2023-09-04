@@ -100,7 +100,7 @@ $(document).ready(function() {
         // Envia os dados via AJAX
         $.ajax({
             type: "POST",
-            url: "https://sheetdb.io/api/v1/ieu4zrq60emxq",
+            url: "https://sheetdb.io/api/v1/ur2bco1l89cgw",
             data: dataEnvio,
         });
     });
